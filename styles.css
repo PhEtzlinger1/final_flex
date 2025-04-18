@@ -1,0 +1,36 @@
+
+body {
+    a:hover {
+        color: rgb(74, 99, 48);
+    }
+    a:active {
+        color: bisque;
+    }
+}
+
+header {
+   display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 60px;
+    padding-top: 0.5em;
+    background-color: rgb(85, 191, 226);
+}
+
+img {
+   
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+   list-style-type: none;
+   display: flex;
+   gap: 0.4em;
+}
+
+h1 {
+    font-weight: 900; color: rgb(158, 188, 188);
+}
