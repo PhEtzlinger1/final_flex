@@ -1,11 +1,48 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
+    
+    
     a:hover {
-        color: rgb(74, 99, 48);
+        color: rgb(43, 47, 44);
+        background-color: rgb(91, 113, 113);
+        /*padding: 2px 4px;
+        border-radius: 4px;
+        font-size: large;*/
+        
     }
     a:active {
         color: bisque;
     }
+    a {
+        color: white;
+    }
+
+    font-family: "Roboto", sans-serif;
+
+    a:link {
+        text-decoration: none;
+    }
+    
+    ul {
+       list-style-type: none;
+       display: flex;
+       gap: 0.4em;
+       
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
+
+
+
+header, footer, .first_section {
+    background-color: #1F2937 ;
 }
 
 header {
@@ -14,23 +51,193 @@ header {
     align-items: flex-start;
     height: 60px;
     padding-top: 0.5em;
-    background-color: rgb(85, 191, 226);
 }
 
-img {
+.button {
+    background-color: rgb(13, 121, 210);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    border: none;    
+    
+}
+
+.button1 {
+    background-color: rgb(13, 121, 210);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.first_section {
+    display: flex;
+    align-items: stretch;
+    /*gap: 10px;*/
+    min-height: 340px;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.first_left {
+    flex: 1;
+    padding-left: 3em;
+    padding-top: 5em;
+    margin-bottom: 2em;
+    justify-content: center;
+    
+}
+
+.first_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+     
+}
+
+.main_headline {
+    font-size: 48px; 
+    font-weight: 900;
+    color: #f9faf8;
+    
+}
+
+.secondary_text, .placeholder {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+
+
+
+/*.first_right {
+    padding: 40px;
+} */
+
+.placeholder {
+    padding: 90px 40px; 
+    border: 2px solid grey;
+    background-color: grey;
+    min-width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: lightgray; */
+}
+
+.gallery_container { /* Container with .imgbox-container & sub-classes */
+    display: flex; /* NO display: flex -> placeholder2 & img_description aligned vertically */
+    flex-wrap: wrap; /*flex-wrap: wrap allows wrapping of content when shrinked*/
+    justify-content: center; /* alignment of complete content area: centered */
+    gap: 8px;
+}
+
+.imgbox_text {
+    margin: 5px;
+    width: 180px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    
+    
+
+    /*flex-wrap: wrap;*/
+    
+    /*align-items: center;*/
+}
+
+.placeholder_2 { /* box with blue border */
+    padding: 75px;
+    border: 2px solid rgb(0, 181, 247);
+    border-radius: 5px;
+    
+    /*flex-flow: row wrap;*/
+
+
+}
+
+.img_description { /* Text below box */
+    font-size: 16px;
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.third_section {
+    height: 330px;
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    width: 720px;
    
 }
 
-a:link {
-    text-decoration: none;
+.author {
+    font-weight: 700;
+    text-align: right;
 }
 
-ul {
-   list-style-type: none;
-   display: flex;
-   gap: 0.4em;
+.fourth_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+
 }
 
-h1 {
-    font-weight: 900; color: rgb(158, 188, 188);
+.flexbox {
+    width: 75%;
+    background-color:rgb(13 121 210);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    gap: 5px;
 }
+
+.left_flex {
+    align-items: center;
+}
+
+ footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f9faf8;
+} 
