@@ -34,7 +34,14 @@ body {
     }
 
     h2 {
+        color: #1F2937;
         text-align: center;
+    }
+
+    h3 {
+        /* text-align: center; */
+        color: white;
+        padding: 0px;
     }
 
 }
@@ -70,8 +77,10 @@ header {
     border-radius: 4px;
     margin-bottom: 50px;
     border: 2px solid white;
-    display: flex;
+    flex-shrink: 0;
+    /*display: flex;
     align-items: center;
+    justify-content: center;*/
 }
 
 .header-left {
@@ -101,6 +110,7 @@ header {
     justify-content: center;
     
 }
+
 
 .first_right {
     flex: 1;
@@ -192,11 +202,12 @@ header {
     align-items: center;
 }
 
-/*.container {
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .quote {
     font-size: 36px;
@@ -208,7 +219,9 @@ header {
 
 .author {
     font-weight: 700;
-    text-align: right;
+    /*text-align: right;*/
+    align-self: last baseline;
+    width: 200px;
 }
 
 .fourth_section {
@@ -220,17 +233,28 @@ header {
 }
 
 .flexbox {
-    width: 75%;
+    max-width: 75%;
     background-color:rgb(13 121 210);
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
     border-radius: 4px;
     gap: 5px;
 }
 
 .left_flex {
-    align-items: center;
+    padding: 2em;
+}
+
+.right_flex {
+    padding: 3em;
+}
+
+.line1 {
+    font-size: larger;
+    color: white;
+    font-weight: 600;
 }
 
  footer {
