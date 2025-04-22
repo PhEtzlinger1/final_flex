@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+/* latest info: mainly worked on the section 3 & 4 but couldn't finish them properly:
+
+Section 3: class ".author" doesn't stay at position where I want it to be when browswer-window is adjusted (eg. shrinked)
+Section 4: Shrinking the browser window leads to overlapping of flexbox class with Section 3 & Footer.
+*/
+
 body {
     
     
